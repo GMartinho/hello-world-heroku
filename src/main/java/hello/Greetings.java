@@ -13,8 +13,8 @@ import java.util.Calendar;
  * @author gmartinho
  */
 public class Greetings implements Serializable{
+    private int period;
     private String greeting;
-    private String period;
     
     public Greetings() {
     }
@@ -29,64 +29,64 @@ public class Greetings implements Serializable{
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
 
         if(hour > 6 && hour < 12){
-            period = "morning";
+            period = 1;
         }else if(hour > 12 && hour < 18){
-            period = "afternoon";
+            period = 2;
         }else{
-            period = "evening";
+            period = 3;
         }
 	
         switch (value){
             case "":
             case "pt":
-                if (period == "morning")
+                if (period == 1)
                     greeting = "Bom dia!";
-		        else if (period == "afternoon")
+		        else if (period == 2)
                     greeting = "Boa tarde!";
 		        else
                     greeting = "Boa noite!";
                 break;
 
             case "en":
-                if (period == "morning")
+                if (period == 1)
                     greeting = "Good Morning!";
-		        else if (period == "afternoon")
+		        else if (period == 2)
                     greeting = "Good Afternoon!";
 		        else
                     greeting = "Good Evening!";
                 break;
 
             case "de":
-                if (period == "morning")
+                if (period == 1)
                     greeting = "Guten Morgen!";
-		        else if (period == "afternoon")
+		        else if (period == 2)
                     greeting = "Guten Nachmittag!";
 		        else
                     greeting = "Gute Abend!";
                 break;
 
             case "fr":
-                if (period == "morning")
+                if (period == 1)
                     greeting = "Bonjour!";
-		        else if (period == "afternoon")
+		        else if (period == 2)
                     greeting = "Bonne soirée!";
 		        else
                     greeting = "Bonsoir!";
                 break;
             
             case "se":
-                if (period == "morning")
+                if (period == 1)
                     greeting = "God Morgon!";
-		        else if (period == "afternoon")
+		        else if (period == 2)
                     greeting = "God Eftermiddag!";
 		        else
                     greeting = "God Kväll!";
                 break;
 
             case "in":
-                if (period == "morning")
+                if (period == 1)
                     greeting = "shubh prabhaat!";
-		        else if (period == "afternoon")
+		        else if (period == 2)
                     greeting = "namaskaar!";
 		        else
                     greeting = "susandhya!";
