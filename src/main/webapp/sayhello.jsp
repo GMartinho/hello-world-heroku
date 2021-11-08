@@ -14,9 +14,17 @@
     </head>
     <body>
         <jsp:useBean id="myBean" class="hello.MessageBean"/>
+        <jsp:useBean id="myDate" class="hello.ActualDate"/>
+        <jsp:useBean id="myGreetings" class="hello.Greetings"/>
         <h1>SayHello.jsp</h1>
         <% String lang = request.getParameter("lang"); %>
         <jsp:setProperty name="myBean" property="msg" value="<%=lang%>"/>
         <jsp:getProperty name="myBean" property="msg"/>, <%=request.getParameter("nome")%>!
+        <br><br>
+        <jsp:setProperty name="myGreetings" property="greeting" value="<%=lang%>"/>
+        <jsp:getProperty name="myGreetings" property="greeting"/>
+        <br><br>
+        <jsp:setProperty name="myDate" property="date" value="<%=lang%>"/>
+        <jsp:getProperty name="myDate" property="date"/>
     </body>
 </html>
