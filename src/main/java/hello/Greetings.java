@@ -15,8 +15,17 @@ import java.util.Calendar;
 public class Greetings implements Serializable{
     private int period;
     private String greeting;
+    private String pron;
     
     public Greetings() {
+    }
+
+    public String getPron() {
+        return pron;
+    }
+
+    public void setPron(String value) {
+        pron = value;
     }
         
     
@@ -27,6 +36,7 @@ public class Greetings implements Serializable{
     public void setGreeting(String value) {
         Calendar calendar = Calendar.getInstance();
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
+        String pronome = getPron();
 
         if(hour > 6 && hour < 12){
             period = 1;
@@ -40,7 +50,7 @@ public class Greetings implements Serializable{
             case "":
             case "pt":
                 if (period == 1){
-                    greeting = "Bom dia!";
+                    greeting = "Bom dia!" + pronome;
                 }else if (period == 2){
                     greeting = "Boa tarde!";
                 }else{
