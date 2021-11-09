@@ -39,57 +39,58 @@ public class Greetings implements Serializable{
         switch (value){
             case "":
             case "pt":
-                if (period == 1)
+                if (period == 1){
                     greeting = "Bom dia!";
-		        else if (period == 2)
+                }else if (period == 2){
                     greeting = "Boa tarde!";
-		        else
+                }else{
                     greeting = "Boa noite!";
+                }
                 break;
-
             case "en":
-                if (period == 1)
+                if (period == 1){
                     greeting = "Good Morning!";
-		        else if (period == 2)
+                }else if (period == 2){
                     greeting = "Good Afternoon!";
-		        else
+                }else{
                     greeting = "Good Evening!";
+                }
                 break;
-
             case "de":
-                if (period == 1)
+                if (period == 1){
                     greeting = "Guten Morgen!";
-		        else if (period == 2)
+                }else if (period == 2){
                     greeting = "Guten Nachmittag!";
-		        else
+                }else{
                     greeting = "Gute Abend!";
+                }
                 break;
-
             case "fr":
-                if (period == 1)
+                if (period == 1){
                     greeting = "Bonjour!";
-		        else if (period == 2)
+                }else if (period == 2){
                     greeting = "Bonne soirée!";
-		        else
+                }else{
                     greeting = "Bonsoir!";
+                }
                 break;
-            
             case "se":
-                if (period == 1)
+                if (period == 1){
                     greeting = "God Morgon!";
-		        else if (period == 2)
+                }else if (period == 2){
                     greeting = "God Eftermiddag!";
-		        else
+                }else{
                     greeting = "God Kväll!";
+                }
                 break;
-
             case "in":
-                if (period == 1)
+                if (period == 1){
                     greeting = "shubh prabhaat!";
-		        else if (period == 2)
+                }else if (period == 2){
                     greeting = "namaskaar!";
-		        else
+                }else{
                     greeting = "susandhya!";
+                }
                 break;
         }
     }
