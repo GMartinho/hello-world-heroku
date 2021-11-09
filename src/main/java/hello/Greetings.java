@@ -20,11 +20,11 @@ public class Greetings implements Serializable{
     }
         
     
-    public String getGreetings() {
+    public String getGreeting() {
         return greeting;
     }
     
-    public void setGreetings(String value) {
+    public void setGreeting(String value) {
         Calendar calendar = Calendar.getInstance();
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
 
