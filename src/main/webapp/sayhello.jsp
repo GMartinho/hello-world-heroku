@@ -14,6 +14,7 @@
     <body>
         <jsp:useBean id="myBean" class="hello.MessageBean"/>
         <jsp:useBean id="myGreeting" class="hello.Greetings"/>
+        <jsp:useBean id="myPronom" class="hello.Greetings"/>
         <jsp:useBean id="myDate" class="hello.ActualDate"/>
 
         <div>
@@ -24,6 +25,9 @@
             <br><br>
             <jsp:setProperty name="myGreeting" property="greeting" value="<%=lang%>"/>
             <jsp:getProperty name="myGreeting" property="greeting"/>
+            <br><br>
+            <jsp:setProperty name="myPronom" property="pron" value="<%=lang%>"/>
+            <jsp:getProperty name="myPronom" property="pron"/>
             <br><br>
             <jsp:setProperty name="myDate" property="date" value="<%=lang%>"/>
             <jsp:getProperty name="myDate" property="date"/>
