@@ -20,15 +20,6 @@ public class Greetings implements Serializable{
     public Greetings() {
     }
 
-    public String getPron() {
-        return pron;
-    }
-
-    public void setPron(String value) {
-        pron = value;
-    }
-        
-    
     public String getGreeting() {
         return greeting;
     }
@@ -50,56 +41,56 @@ public class Greetings implements Serializable{
             case "":
             case "pt":
                 if (period == 1){
-                    greeting = "Bom dia!" + pronome;
+                    greeting = "Bom dia!";
                 }else if (period == 2){
-                    greeting = "Boa tarde!" + pronome;
+                    greeting = "Boa tarde!";
                 }else{
-                    greeting = "Boa noite!" + pronome;
+                    greeting = "Boa noite!";
                 }
                 break;
             case "en":
                 if (period == 1){
-                    greeting = "Good Morning!" + pronome;
+                    greeting = "Good Morning!";
                 }else if (period == 2){
-                    greeting = "Good Afternoon!" + pronome;
+                    greeting = "Good Afternoon!";
                 }else{
-                    greeting = "Good Evening!" + pronome;
+                    greeting = "Good Evening!";
                 }
                 break;
             case "de":
                 if (period == 1){
-                    greeting = "Guten Morgen!" + pronome;
+                    greeting = "Guten Morgen!";
                 }else if (period == 2){
-                    greeting = "Guten Nachmittag!" + pronome;
+                    greeting = "Guten Nachmittag!";
                 }else{
-                    greeting = "Gute Abend!" + pronome;
+                    greeting = "Gute Abend!";
                 }
                 break;
             case "fr":
                 if (period == 1){
-                    greeting = "Bonjour!" + pronome;
+                    greeting = "Bonjour!";
                 }else if (period == 2){
-                    greeting = "Bonne soirée!" + pronome;
+                    greeting = "Bonne soirée!";
                 }else{
-                    greeting = "Bonsoir!" + pronome;
+                    greeting = "Bonsoir!";
                 }
                 break;
             case "se":
                 if (period == 1){
-                    greeting = "God Morgon!" + pronome;
+                    greeting = "God Morgon!";
                 }else if (period == 2){
-                    greeting = "God Eftermiddag!" + pronome;
+                    greeting = "God Eftermiddag!";
                 }else{
-                    greeting = "God Kväll!" + pronome;
+                    greeting = "God Kväll!";
                 }
                 break;
             case "in":
                 if (period == 1){
-                    greeting = "shubh prabhaat!" + pronome;
+                    greeting = "shubh prabhaat!";
                 }else if (period == 2){
-                    greeting = "namaskaar!" + pronome;
+                    greeting = "namaskaar!";
                 }else{
-                    greeting = "susandhya!" + pronome;
+                    greeting = "susandhya!";
                 }
                 break;
         }
