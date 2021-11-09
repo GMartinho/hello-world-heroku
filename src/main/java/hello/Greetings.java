@@ -52,54 +52,54 @@ public class Greetings implements Serializable{
                 if (period == 1){
                     greeting = "Bom dia!" + pronome;
                 }else if (period == 2){
-                    greeting = "Boa tarde!";
+                    greeting = "Boa tarde!" + pronome;
                 }else{
-                    greeting = "Boa noite!";
+                    greeting = "Boa noite!" + pronome;
                 }
                 break;
             case "en":
                 if (period == 1){
-                    greeting = "Good Morning!";
+                    greeting = "Good Morning!" + pronome;
                 }else if (period == 2){
-                    greeting = "Good Afternoon!";
+                    greeting = "Good Afternoon!" + pronome;
                 }else{
-                    greeting = "Good Evening!";
+                    greeting = "Good Evening!" + pronome;
                 }
                 break;
             case "de":
                 if (period == 1){
-                    greeting = "Guten Morgen!";
+                    greeting = "Guten Morgen!" + pronome;
                 }else if (period == 2){
-                    greeting = "Guten Nachmittag!";
+                    greeting = "Guten Nachmittag!" + pronome;
                 }else{
-                    greeting = "Gute Abend!";
+                    greeting = "Gute Abend!" + pronome;
                 }
                 break;
             case "fr":
                 if (period == 1){
-                    greeting = "Bonjour!";
+                    greeting = "Bonjour!" + pronome;
                 }else if (period == 2){
-                    greeting = "Bonne soirée!";
+                    greeting = "Bonne soirée!" + pronome;
                 }else{
-                    greeting = "Bonsoir!";
+                    greeting = "Bonsoir!" + pronome;
                 }
                 break;
             case "se":
                 if (period == 1){
-                    greeting = "God Morgon!";
+                    greeting = "God Morgon!" + pronome;
                 }else if (period == 2){
-                    greeting = "God Eftermiddag!";
+                    greeting = "God Eftermiddag!" + pronome;
                 }else{
-                    greeting = "God Kväll!";
+                    greeting = "God Kväll!" + pronome;
                 }
                 break;
             case "in":
                 if (period == 1){
-                    greeting = "shubh prabhaat!";
+                    greeting = "shubh prabhaat!" + pronome;
                 }else if (period == 2){
-                    greeting = "namaskaar!";
+                    greeting = "namaskaar!" + pronome;
                 }else{
-                    greeting = "susandhya!";
+                    greeting = "susandhya!" + pronome;
                 }
                 break;
         }
